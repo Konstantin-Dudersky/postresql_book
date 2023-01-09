@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres
+    container_name: pgbook_postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - pgbook_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgbook_pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=test@mail.com
+      - PGADMIN_DEFAULT_PASSWORD=123
+    ports:
+      - 8000:80
+    volumes:
+      - pgbook_pgadmin_data:/var/lib/pgadmin
+volumes:
+  pgbook_data:
+    name: "pgbook_data"
+  pgbook_pgadmin_data:
+    name: "pgbook_pgadmin_data"
