@@ -1,4 +1,4 @@
-Книга "PostgreSQL". Основы языка SQL.
+Книга "PostgreSQL. Основы языка SQL."
 
 Загрузить:
 
@@ -16,6 +16,8 @@ cd ..
 ```bash
 psql -h localhost -p 5432 -U postgres -f demo/demo_small.sql
 ```
+
+Запустить:
 
 ```bash
 docker compose up -d
