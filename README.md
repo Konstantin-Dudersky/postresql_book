@@ -11,7 +11,7 @@ rm -f demo.zip &&
 cd ..
 ```
 
-Создать БД:
+Восстановить БД из бекапа:
 
 ```bash
 psql -h localhost -p 5432 -U postgres -f demo/demo_small.sql
