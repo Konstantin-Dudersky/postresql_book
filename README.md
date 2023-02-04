@@ -5,11 +5,16 @@
 ```bash
 mkdir -p demo &&
 cd demo &&
-curl -o demo.zip https://edu.postgrespro.ru/demo-small-20161013.zip &&
+curl -o demo.zip https://edu.postgrespro.ru/demo-small.zip &&
 unzip demo.zip &&
 rm -f demo.zip &&
 cd ..
 ```
+
+Другие варианты:
+demo-medium.zip
+demo-big.zip
+
 
 Восстановить БД из бекапа:
 
